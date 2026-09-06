@@ -439,7 +439,7 @@ public class MemoProcess {
     if (texts.isEmpty()) {
 
       System.out.println();
-      System.out.println("メモは追加されませんでした.");
+      System.out.println("メモは追加されませんでした。");
       waitForEnter();
       return;
     }

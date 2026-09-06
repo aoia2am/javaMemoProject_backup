@@ -156,27 +156,6 @@ public class ProjectProcess {
     }
   }
 
-  public void showProjectList() {
-
-    ConsoleUtil.showDivider();
-
-    ArrayList<Project> activeProjects = getActiveProjects();
-
-    System.out.println("プロジェクト");
-    System.out.println();
-
-    if (activeProjects.isEmpty()) {
-      System.out.println("プロジェクトはありません。");
-      return;
-    }
-
-    for (int i = 0; i < activeProjects.size(); i++) {
-
-      System.out.println(
-          (i + 1) + ". " + activeProjects.get(i).getName());
-    }
-  }
-
   // =========================
   // プロジェクト名変更
   // =========================
@@ -220,7 +199,7 @@ public class ProjectProcess {
       if (number < 1 || number > activeProjects.size()) {
 
         System.out.println();
-        System.out.println("正しい番号を入力してください.");
+        System.out.println("正しい番号を入力してください。");
         waitForEnter();
         return;
       }
@@ -463,9 +442,7 @@ public class ProjectProcess {
       if (project.isCompleted()) {
 
         System.out.println(
-
-            project.getName()
-                + " [完了]");
+            project.getName() + " [完了]");
 
       }
     }
