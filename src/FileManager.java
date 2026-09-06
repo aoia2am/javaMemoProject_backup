@@ -4,8 +4,8 @@ import java.util.ArrayList;
 // dataフォルダのtxtから読み書きする
 public class FileManager {
 
-  // srcから実行するので1つ上のdataを見る
-  private static final String DATA_DIRECTORY = "../data";
+  // 実行時の作業ディレクトリ（Eclipseではプロジェクト直下）の data を見る
+  private static final String DATA_DIRECTORY = "data";
   private static final String PROJECT_FILE = DATA_DIRECTORY + "/projects.txt";
   private static final String MEMO_FILE = DATA_DIRECTORY + "/memos.txt";
 
